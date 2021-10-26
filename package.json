@@ -1,0 +1,34 @@
+{
+  "scripts": {
+    "start": "node index.js"
+  },
+  "name": "GMYSQL",
+  "version": "1.0.0",
+  "description": "Mysql client for manage data",
+  "keywords": [
+    "mysql",
+    "phpmyadmin",
+    "admin"
+  ],
+  "type": "module",
+  "homepage": "https://gmysql.grammla.ru",
+  "bugs": {
+    "url": "https://github.com/foremmost/gmysql/issues",
+    "email": "foremost186@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Anton Smetanin",
+    "email": "foremost186@gmail.com",
+    "url": "https://github.com/foremmost"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/foremmost/gmysql.git"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.3.2"
+  }
+}
