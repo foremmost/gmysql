@@ -1,6 +1,12 @@
 {
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "watch": "browser-sync start --proxy 'localhost:3000' --files 'public' "
+  },
+  "exports": {
+    ".": "./main.js",
+    "./home": "./routes/home.js"
   },
   "name": "GMYSQL",
   "version": "1.0.0",
@@ -28,7 +34,15 @@
     "url": "https://github.com/foremmost/gmysql.git"
   },
   "dependencies": {
+    "browser-sync": "^2.27.6",
     "express": "^4.17.1",
-    "mysql2": "^2.3.2"
+    "fs": "0.0.1-security",
+    "mysql2": "^2.3.2",
+    "node-sass-middleware": "^0.11.0",
+    "nodemon": "^2.0.14",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "pug": "^3.0.2"
   }
 }
